@@ -1,0 +1,336 @@
+<html>
+<head>
+    <title>Online Exam Portal - Exams</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ab4e0b;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 35px;
+            color: #fff;
+        }
+
+        header p {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #eb9e51;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 8px 16px;
+        }
+
+        nav a:hover {
+            background-color: rgb(235, 149, 2);
+            border-radius: 5px;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #2d3748;
+            text-align: center;
+            font-size: 28px;
+            margin: 40px 0 25px 0;
+            font-weight: bold;
+            background-color: #edf2f7;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #4299e1;
+        }
+
+        table {
+            width: 90%;
+            background-color: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        td {
+            padding: 18px;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 16px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #f7fafc;
+        }
+
+        button {
+            background-color: #38a169;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2f855a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #exam-header {
+            background-color: #2b6cb0;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #exam-header td {
+            border-bottom: 2px solid #1a365d;
+        }
+
+        .exam-cost {
+            font-weight: bold;
+            color: #2f855a;
+            font-size: 18px;
+        }
+
+        .exam-level {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #2c5282;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-top: 3px solid #1a365d;
+        }
+
+        footer table {
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        footer td {
+            color: #e2e8f0;
+            border: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1>Online Exam Portal</h1>
+            <p>Available Programming Exams</p>
+        </header>
+    </center>
+
+    <center>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="examregistration.html">Exam Registration</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </center>
+
+    <h2>Java Programming Certification</h2>
+    <center>
+        <table>
+            <tr id="exam-header">
+                <td>Exam Level</td>
+                <td>Duration</td>
+                <td>Time Slot</td>
+                <td>Cost</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td class="exam-level">Java Fundamentals</td>
+                <td>2 Hours</td>
+                <td>9:00 AM - 11:00 AM</td>
+                <td class="exam-cost">$99</td>
+                <td>
+                    <form method="post" action="/apply-exam">
+                        <input type="hidden" name="exam" value="java-fundamentals">
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="exam-level">Advanced Java</td>
+                <td>3 Hours</td>
+                <td>2:00 PM - 5:00 PM</td>
+                <td class="exam-cost">$149</td>
+                <td>
+                    <form method="post" action="/apply-exam">
+                        <input type="hidden" name="exam" value="java-advanced">
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <h2>C Programming Certification</h2>
+    <center>
+        <table>
+            <tr id="exam-header">
+                <td>Exam Level</td>
+                <td>Duration</td>
+                <td>Time Slot</td>
+                <td>Cost</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td class="exam-level">C Basics</td>
+                <td>2 Hours</td>
+                <td>10:00 AM - 12:00 PM</td>
+                <td class="exam-cost">$79</td>
+                <td>
+                    <form method="post" action="/apply-exam">
+                        <input type="hidden" name="exam" value="c-basics">
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="exam-level">Advanced C</td>
+                <td>2.5 Hours</td>
+                <td>1:00 PM - 3:30 PM</td>
+                <td class="exam-cost">$119</td>
+                <td>
+                    <form method="post" action="/apply-exam">
+                        <input type="hidden" name="exam" value="c-advanced">
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <h2>C++ Programming Certification</h2>
+    <center>
+        <table>
+            <tr id="exam-header">
+                <td>Exam Level</td>
+                <td>Duration</td>
+                <td>Time Slot</td>
+                <td>Cost</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td class="exam-level">C++ Fundamentals</td>
+                <td>2.5 Hours</td>
+                <td>9:30 AM - 12:00 PM</td>
+                <td class="exam-cost">$109</td>
+                <td>
+                    <form method="post" action="/apply-exam">
+                        <input type="hidden" name="exam" value="cpp-fundamentals">
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="exam-level">Object-Oriented C++</td>
+                <td>3 Hours</td>
+                <td>2:30 PM - 5:30 PM</td>
+                <td class="exam-cost">$159</td>
+                <td>
+                    <form method="post" action="/apply-exam">
+                        <input type="hidden" name="exam" value="cpp-oop">
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <h2>JavaScript Programming Certification</h2>
+    <center>
+        <table>
+            <tr id="exam-header">
+                <td>Exam Level</td>
+                <td>Duration</td>
+                <td>Time Slot</td>
+                <td>Cost</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td class="exam-level">JavaScript Basics</td>
+                <td>2 Hours</td>
+                <td>11:00 AM - 1:00 PM</td>
+                <td class="exam-cost">$89</td>
+                <td>
+                    <form method="post" action="/apply-exam">
+                        <input type="hidden" name="exam" value="js-basics">
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="exam-level">Advanced JavaScript</td>
+                <td>3 Hours</td>
+                <td>3:00 PM - 6:00 PM</td>
+                <td class="exam-cost">$139</td>
+                <td>
+                    <form method="post" action="/apply-exam">
+                        <input type="hidden" name="exam" value="js-advanced">
+                        <button type="submit">Apply Now</button>
+                    </form>
+                </td>
+            </tr>
+        </table> <br><br><br>
+    </center>
+
+    <footer>
+        <center>
+            <table>
+                <tr>
+                    <td>Email: examportal@srieducation.com</td>
+
+                    <td>Phone: +91 6305896704</td>
+
+                    <td>Address: 123 Main Street, Visakhapatnam, India</td>
+
+                    <td>
+                        © 2024 Sri Online Exam Portal. All rights reserved.
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </footer>
+</body>
+</html>

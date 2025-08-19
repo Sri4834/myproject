@@ -1,0 +1,189 @@
+<html>
+<head>
+    <title>Online Examination - Register Page</title>
+    <style>
+        body {
+            background-color: #ffedd1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ab4e0b;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 35px;
+            color: #fff;
+        }
+
+        header p {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #eb9e51;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 8px 16px;
+        }
+
+        nav a:hover {
+            background-color: rgb(235, 149, 2);
+            border-radius: 5px;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        form {
+            border: 2px solid #8b4513;
+            border-radius: 20px;
+            padding: 40px;
+            width: 32%;
+            background: #fff;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        option:hover {
+            cursor: pointer;
+        }
+
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(235, 149, 2);
+        }
+
+        footer {
+            background-color: #ab4e0b;
+            color: white;
+            padding: 22px;
+            text-align: center;
+        }
+
+        .eye-btn {
+            position: absolute;
+            right: 35px;
+            margin-top: -30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To User Registration Page</h1>
+        <p>Learning is an art and we are the masters of it!</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="exam.html">Exams</a>
+        <a href="examregistration.html">Exam Registration</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <h1>User Registration Form</h1>
+
+    <form action="Reg" method="post">
+        <label>Username:</label>
+        <input name="user_name" type="text" required>
+
+        <label>Email:</label>
+        <input name="email" type="email" required>
+
+        <label>Student ID:</label>
+        <input name="sid" type="text" required>
+
+        <label>Year of Study:</label>
+        <input name="year" type="number" required>
+
+        <label>Contact No:</label>
+        <input name="phone" type="number" required>
+
+        <label>Branch:</label>
+        <select name="branch" required>
+            <option value="">SELECT</option>
+            <option value="CSE">CSE</option>
+            <option value="CSD">CSD</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+        </select>
+
+        <label>Password:</label>
+        <input name="password" id="password" type="password" required>
+        <center>
+            <table>
+                <tr>
+                    <td>
+                        <input name="terms" type="checkbox" required>
+                    </td>
+                    <td>
+                        <label>
+                            I agree to the Terms and Conditions
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <center>
+            <p><b>Already have an account?</b><a href="login.html">&nbsp;Click here to Login</a></p>
+            <button type="submit">Register</button>
+        </center>
+    </form>
+
+    <footer><center>
+        <table>
+            <tr>
+                <td>Email: examinationonline@gmail.com</td>
+                <td>&nbsp;Phone: 6305896704</td>
+                <td>&nbsp;Address: Main Road, Visakhapatnam, India</td>
+            </tr>
+        </table>
+        </center>
+    </footer>
+</body>
+</html>
